@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+#headerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fdead2;
+}
+
+#headerBox__title{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    color: brown
+}
+/* #divCounter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counter__fig{
+    width: 3em;
+    height: 3em;
+}
+.counter__fig__img{
+    width: 3em;
+    height: 3em;
+} */
+
+#mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+img{
+    width: 4em;
+    height: 4em;
+}
+figure {
+    border: solid 2px black;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.btn{
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    padding: 10px;
+    border: solid 2px black;
+}
+#winnerBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbea84eb;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: solid 2px green;
+    border-radius: 30%;
+}
+
+#winnerBox__text{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+#winnerBox__btn{
+    border: solid 2px rgb(228, 208, 208);
+    font-size: 1em;
+}
+#loserBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eea5a5eb;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: solid 2px rgb(128, 15, 0);
+    border-radius: 30%;
+}
+#loserBox__text{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+#loserBox__btn{
+    border: solid 2px rgb(228, 208, 208);
+    font-size: 1em;
+}
+#drawBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #54bef3e7;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: solid 2px rgb(2, 39, 248);
+    border-radius: 30%;
+}
+
+#drawBox__text{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+#drawBox__btn{
+    border: solid 2px rgb(228, 208, 208);
+    font-size: 1em;
+}
+footer{
+    background-color: burlywood;
+    letter-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+#linkedin{
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 750px){
+    #mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 5em;
+        height: 5em;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+    footer p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+}
+@media (min-width: 892px){
+    #mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 5em;
+        height: 5em;
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    footer p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+}
